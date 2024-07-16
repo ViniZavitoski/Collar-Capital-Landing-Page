@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #EB1CCC;
+    --secondary: #95989a;
+    --text-secondary:#000;
+    --text-tertiary:#5d5d5d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Event form*/
+#event-description {
+    background: linear-gradient(to bottom, transparent, black), url(bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+#disclaimer .logo {
+    max-width: 300px;
+    margin-bottom: 2em;
+}
+
+#disclaimer .about-event {
+    font-size: 1.8em;
+    max-width: 350px;
+    font-weight: thin;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    text-transform: uppercase;
+    margin-left: -1em;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 0.3em;
+}
+
+#subscription-form {
+    background: rgba(177, 177, 177, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(98, 101, 143, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 1px solid rgba(155, 155, 155, 0.18);
+    background-color: transparent;
+    padding: 2em;
+    max-width: 30%;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+.form-group label {
+    color: white;
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    color: black;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn { 
+    border-radius: 1em;
+    margin-top: 1em;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #000;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+/*description2*/
+.description2 {
+    background: linear-gradient(to bottom, transparent, black);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.description2 .text{
+    margin-left: 2.2em;
+}
+
+.description2 .text h2 {
+    color: #000;
+    max-width: 300px;
+    margin-bottom: 2em;
+}
+
+.description2 .text p {
+    color: #000;
+    max-width: 350px;
+    font-weight: thin;
+    margin-bottom: 1.2em;
+}
+
+.description2 .imagem img {
+    max-width: 800px;
+}
+
+.btn2 {
+    border-radius: 1em;
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    margin: 1em 0 5em 0;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+/*Benefits section*/
+
+.aprender {
+    margin-top: 0;
+}
+
+.aprender h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    padding: 2em;
+    margin: 0;
+}
+
+#key-benefits h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    padding: 2em;
+}
+
+#key-benefits{
+    height: 80vh;
+    background: linear-gradient(to bottom, transparent, black);
+}
+
+#benefits {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.benefit p{
+    font-size: 1em;
+}
+
+.benefit .benefit-img {
+    width: 170px;
+    height: 170px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2em;
+}
+
+.benefit-img:hover{
+    transform: scale(1.2);
+    transition: .5s ease;
+}
+
+#benefit-1 {
+    background-image: url("bg1.png");
+}
+
+#benefit-2{
+    background-image: url("bg2.png");
+}
+
+#benefit-3{
+    background-image: url("/bg3.png");
+}
+
+#benefit-4{
+    background-image: url("bg4.png");
+}
+
+.question {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.question input,
+.question .answer { 
+    display: none;
+}
+
+.question label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.question input:checked ~ .answer {
+    display: block;
+}
+
+.max {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #000;
+    margin: 0;
+}
+
+.panel-heading {
+    background-color: #000;
+}
+
+.panel-title {
+    color: #000;
+}
+
+.max h2,
+.max p {
+    color: white;
+}
+
+.panel-heading .title {
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.footer img {
+    margin-bottom: 1em;
+}
+
+.footer p {
+    margin-bottom: 2em;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    #subscription-form {
+        max-width: 40%;
+    }
+
+    #benefits {
+        padding: 3em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #event-description{
+        height: 120vh;
+    }
+    .description2{
+        flex-direction: column;
+        display: flex;
+        height: 150vh;
+    }
+
+    .description2 .imagem{
+        margin-right: 40em;
+        max-width: 30%;
+        margin-bottom: 20em;
+        margin-top: -5em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #event-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #subscription-form {
+        max-width: 80%;
+        margin-top: 2em;
+    }
+
+    .description2 {
+        flex-direction: column;
+    }
+
+    .description2 .imagem {
+        height: 40vh;
+    }
+
+    .btn2 {
+        margin: 1em 0;
+    }
+    
+    #key-benefits{
+        height: auto;
+    }
+
+    #benefits {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .benefit {
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #event-description {
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .description2 .text {
+        text-align: left;
+        max-width: 80%;
+        margin: 0 auto 1em;
+    }
+
+    .description2 .imagem{
+        width: 120%;
+        height: auto;
+        margin-bottom: 2em;
+        margin-left: -9em;
+        margin-top: -2em;
+    }
+
+    .description2 button {
+        margin-top: 1em;
+    }
+
+    .logo {
+        margin-top: 2em;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #subscription-form {
+        padding: 1em;
+        max-width: 100%;
+    }
+
+    .btn, .btn2 {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #key-benefits{
+        height: auto;
+    }
+
+    .benefit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .benefit .benefit-img {
+        margin-bottom: 1em;
+    }
+
+    .max {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1em;
+        text-align: center;
+    }
+}
